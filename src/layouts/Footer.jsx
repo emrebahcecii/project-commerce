@@ -3,7 +3,7 @@ import { Facebook, Instagram, Twitter } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-gray-50">
-      <div className="max-w-7xl mx-auto px-8 py-10">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-10">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between border-b border-gray-200 pb-6 mb-6">
           <h2 className="text-xl font-bold">Bandage</h2>
 
@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-6 text-sm text-gray-600">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-6 text-sm text-gray-600">
           <div>
             <h4 className="font-semibold mb-3">Company Info</h4>
             <ul className="space-y-2">
@@ -59,13 +59,13 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-semibold mb-3">Get In Touch</h4>
-            <form className="flex">
+            <form className="flex flex-col sm:flex-row">
               <input
                 type="email"
                 placeholder="Your Email"
-                className="flex-1 border border-gray-300 rounded-l-md px-3 py-2 text-sm focus:outline-none"
+                className="flex-1 border border-gray-300 rounded-md sm:rounded-l-md sm:rounded-r-none px-3 py-2 text-sm focus:outline-none mb-2 sm:mb-0"
               />
-              <button className="bg-blue-500 text-white px-4 py-2 rounded-r-md text-sm hover:bg-blue-600">
+              <button className="bg-blue-500 text-white px-4 py-2 rounded-md sm:rounded-r-md sm:rounded-l-none text-sm hover:bg-blue-600">
                 Subscribe
               </button>
             </form>
@@ -77,11 +77,11 @@ export default function Footer() {
       </div>
 
       <div className="bg-gray-100 py-4">
-          <div className="max-w-7xl mx-auto px-8">
-              <p className="text-sm text-gray-500">
-                  Made With Love By Finland All Right Reserved
-              </p>
-          </div>
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <p className="text-sm text-gray-500">
+            Made With Love By Finland All Right Reserved
+          </p>
+        </div>
       </div>
     </footer>
   );

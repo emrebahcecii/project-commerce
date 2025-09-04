@@ -37,18 +37,18 @@ export default function Hero() {
         </SwiperSlide>
       </Swiper>
 
-      <div className="absolute inset-0 flex items-center justify-start pl-56 z-20 pointer-events-none">
-        <div className="text-white max-w-xl pointer-events-auto">
-          <h3 className="text-base uppercase tracking-widest mb-4">
+      <div className="absolute inset-0 flex items-center justify-center md:justify-start md:pl-56 z-20 pointer-events-none">
+        <div className="text-white max-w-xl pointer-events-auto text-center md:text-left">
+          <h3 className="text-sm md:text-base uppercase tracking-widest mb-4">
             Summer 2025
           </h3>
-          <h1 className="text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             NEW COLLECTION
           </h1>
-          <p className="text-xl mb-8 leading-relaxed">
+          <p className="text-base md:text-xl mb-8 leading-relaxed">
             We know how large objects will act, but things on a small scale.
           </p>
-          <button className="bg-green-500 text-white px-8 py-4 text-lg rounded-lg font-semibold hover:bg-green-600 transition">
+          <button className="bg-green-500 text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg rounded-lg font-semibold hover:bg-green-600 transition">
             SHOP NOW
           </button>
         </div>

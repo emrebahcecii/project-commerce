@@ -11,7 +11,7 @@ const posts = [
 export default function FeaturedPosts() {
   return (
     <section className="py-16">
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 px-4">
         <p className="text-blue-500 font-semibold">Practice Advice</p>
         <h2 className="text-3xl font-bold">Featured Posts</h2>
         <p className="text-gray-500 mt-2 text-sm">
@@ -20,7 +20,7 @@ export default function FeaturedPosts() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-56">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 md:px-56">
         {posts.map((post) => (
           <div
             key={post.id}
@@ -48,7 +48,8 @@ export default function FeaturedPosts() {
                 Loudest à la Madison #1 (L’intégral)
               </h3>
               <p className="text-gray-500 text-sm mb-4">
-                We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+                We focus on ergonomics and meeting you where you work. It's only
+                a keystroke away.
               </p>
 
               <div className="flex items-center justify-between text-xs text-gray-500 mb-4">
