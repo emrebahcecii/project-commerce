@@ -6,7 +6,6 @@ import kidsImg from "../assets/images/resim-4.png";
 export default function EditorPick() {
   return (
     <section className="py-16 px-8">
-      {/* Başlık */}
       <div className="text-center mb-12">
         <h2 className="text-2xl font-bold">EDITOR’S PICK</h2>
         <p className="text-gray-500">
@@ -14,7 +13,6 @@ export default function EditorPick() {
         </p>
       </div>
 
-      {/* Grid */}
       <div className="grid grid-cols-4 gap-6">
         {/* MEN */}
         <div className="relative col-span-2 row-span-2">
@@ -28,7 +26,6 @@ export default function EditorPick() {
           </button>
         </div>
 
-        {/* WOMEN (yüksek kutu) */}
         <div className="relative col-span-1 row-span-2">
           <img
             src={womenImg}
@@ -40,7 +37,6 @@ export default function EditorPick() {
           </button>
         </div>
 
-        {/* ACCESSORIES */}
         <div className="relative col-span-1">
           <img
             src={accImg}
@@ -52,7 +48,6 @@ export default function EditorPick() {
           </button>
         </div>
 
-        {/* KIDS (Accessories’in altında) */}
         <div className="relative col-span-1">
           <img
             src={kidsImg}

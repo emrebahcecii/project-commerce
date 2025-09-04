@@ -21,7 +21,6 @@ const products = [
 export default function BestSeller() {
   return (
     <section className="pt- pb-16">
-      {/* Başlık */}
       <div className="text-center mb-12">
         <h4 className="text-gray-500 uppercase text-sm tracking-wide">
           Featured Products
@@ -32,7 +31,6 @@ export default function BestSeller() {
         </p>
       </div>
 
-      {/* Ürünler */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-8">
         {products.map((product) => (
           <div key={product.id} className="text-center">
@@ -44,13 +42,11 @@ export default function BestSeller() {
             <h3 className="font-semibold">Graphic Design</h3>
             <p className="text-gray-500 text-sm">English Department</p>
 
-            {/* Fiyat */}
             <div className="mt-2">
               <span className="text-gray-400 line-through mr-2">$16.48</span>
               <span className="text-blue-600 font-bold">$6.48</span>
             </div>
 
-            {/* Renk Seçenekleri */}
             <div className="flex justify-center space-x-2 mt-3">
               <span className="w-4 h-4 rounded-full bg-red-500"></span>
               <span className="w-4 h-4 rounded-full bg-teal-500"></span>

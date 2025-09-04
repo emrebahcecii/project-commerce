@@ -6,6 +6,7 @@ import EditorPick from "../components/EditorPick";
 import BestSeller from "../components/BestSeller";
 import ProductHighlight from "../components/ProductHighlight";
 import NeuralUniverse from "../components/NeuralUniverse";
+import FeaturedPosts from "../components/FeaturedPosts";
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
 
       <ProductHighlight/>
       <NeuralUniverse/>
+      <FeaturedPosts/>
 
       <Footer />
     </div>

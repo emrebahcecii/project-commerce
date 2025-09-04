@@ -18,9 +18,7 @@ export default function Header() {
 
   return (
     <header className="w-full text-sm">
-      {/* Top Bar */}
       <div className="w-full bg-slate-900 text-white flex items-center justify-between relative p-4">
-        {/* Sol: Telefon + Mail */}
         <div className="flex gap-6">
           <span className="flex items-center gap-2">
             <Phone size={16} /> (225) 555-0118
@@ -30,12 +28,10 @@ export default function Header() {
           </span>
         </div>
 
-        {/* Orta: Mesaj */}
         <p className="absolute left-1/2 -translate-x-1/2">
           Follow Us and get a chance to win 80% off
         </p>
 
-        {/* Sağ: Sosyal ikonlar */}
         <div className="flex items-center gap-3">
           <span className="mr-2">Follow Us :</span>
           <Instagram size={16} className="cursor-pointer hover:text-pink-400" />
@@ -45,18 +41,15 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Main Navigation */}
       <div className="w-full bg-white shadow flex items-center justify-between px-6 py-4 relative">
         {/* Logo */}
         <h1 className="text-2xl font-bold text-slate-900">Bandage</h1>
 
-        {/* Menü Linkleri */}
         <nav className="hidden md:flex gap-6 text-slate-700 relative">
           <a href="/" className="hover:text-blue-600">
             Home
           </a>
 
-          {/* Shop Dropdown */}
           <div
             className="relative"
             onMouseEnter={() => setOpen(true)}
@@ -79,7 +72,6 @@ export default function Header() {
                   </ul>
                 </div>
 
-                {/* Erkek */}
                 <div>
                   <h4 className="font-semibold mb-2">Erkek</h4>
                   <ul className="space-y-1 text-sm text-slate-600">
@@ -107,7 +99,6 @@ export default function Header() {
           </a>
         </nav>
 
-        {/* Sağ İkonlar */}
         <div className="flex items-center gap-5">
           <a
             href="/login"

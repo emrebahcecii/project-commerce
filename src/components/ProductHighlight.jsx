@@ -17,10 +17,8 @@ export default function ProductHighlight() {
         loop
         className="w-full h-full"
       >
-        {/* Slide 1 */}
         <SwiperSlide>
           <div className="w-full h-full bg-[#23856D] flex items-center justify-around px-6 gap-4">
-            {/* Sol Yazılar */}
             <div className="text-white max-w-md">
               <h4 className="uppercase tracking-widest text-base mb-3">
                 Summer 2020
@@ -38,7 +36,6 @@ export default function ProductHighlight() {
               </div>
             </div>
 
-            {/* Sağ Görsel */}
             <div className="flex items-center">
               <img
                 src={childImg}
@@ -49,10 +46,8 @@ export default function ProductHighlight() {
           </div>
         </SwiperSlide>
 
-        {/* Slide 2 */}
         <SwiperSlide>
           <div className="w-full h-full bg-[#23856D] flex items-center justify-around px-6 gap-4">
-            {/* Sol Yazılar */}
             <div className="text-white max-w-md">
               <h4 className="uppercase tracking-widest text-base mb-3">
                 New Collection
@@ -70,7 +65,6 @@ export default function ProductHighlight() {
               </div>
             </div>
 
-            {/* Sağ Görsel */}
             <div className="flex items-center">
               <img
                 src={pexelImg}

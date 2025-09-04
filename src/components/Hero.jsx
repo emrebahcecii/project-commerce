@@ -10,7 +10,6 @@ import resimImg from "../assets/images/resim.jpg";
 export default function Hero() {
   return (
     <section className="relative w-full h-screen">
-      {/* Swiper */}
       <Swiper
         modules={[Navigation, Pagination]}
         navigation
@@ -20,7 +19,6 @@ export default function Hero() {
         allowTouchMove={false}
         className="w-full h-full z-10"
       >
-        {/* Slide 1 */}
         <SwiperSlide>
           <div
             className="w-screen h-screen bg-cover"
@@ -31,7 +29,6 @@ export default function Hero() {
           />
         </SwiperSlide>
 
-        {/* Slide 2 */}
         <SwiperSlide>
           <div
             className="w-screen h-screen bg-cover bg-center"
@@ -40,7 +37,6 @@ export default function Hero() {
         </SwiperSlide>
       </Swiper>
 
-      {/* Overlay (sol yazılar) */}
       <div className="absolute inset-0 flex items-center justify-start pl-56 z-20 pointer-events-none">
         <div className="text-white max-w-xl pointer-events-auto">
           <h3 className="text-base uppercase tracking-widest mb-4">
