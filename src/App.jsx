@@ -1,12 +1,31 @@
-import Header from "./components/Header";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Header from "./layouts/Header";
+import Footer from "./layouts/Footer";
+
+import HomePage from "./pages/HomePage";
+import ProductsPage from "./pages/ProductsPage";
+import AboutPage from "./pages/AboutPage";
+import ShopPage from "./pages/ShopPage";
 
 function App() {
-
   return (
-    <>
-      <Header/>
-    </>
-  )
+    <BrowserRouter>
+      <div className="flex flex-col min-h-screen">
+        <Header />
+
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/shop" element={<ShopPage />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
