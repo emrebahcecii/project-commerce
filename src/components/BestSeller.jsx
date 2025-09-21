@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import pic1 from "../assets/images/pic-1.png";
 import pic2 from "../assets/images/pic-2.png";
 import pic3 from "../assets/images/pic-3.png";
@@ -34,11 +35,15 @@ export default function BestSeller() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-8">
         {products.map((product) => (
           <div key={product.id} className="text-center">
-            <img
-              src={product.image}
-              alt="product"
-              className="w-full h-auto mb-4"
-            />
+            {/* ✅ Tıklanabilir hale getirildi */}
+            <Link to={`/products/${product.id}`}>
+              <img
+                src={product.image}
+                alt={`product-${product.id}`}
+                className="w-full h-auto mb-4 cursor-pointer transition-transform hover:scale-105"
+              />
+            </Link>
+
             <h3 className="font-semibold">Graphic Design</h3>
             <p className="text-gray-500 text-sm">English Department</p>
 

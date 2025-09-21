@@ -85,7 +85,7 @@ export default function Header() {
           <Link to="/about" className="hover:text-blue-600">About</Link>
           <Link to="/about" className="hover:text-blue-600">Blog</Link>
           <Link to="/contact" className="hover:text-blue-600">Contact</Link>
-          <Link to="/about" className="hover:text-blue-600">Pages</Link>
+          <Link to="/about" className="hover:text-blue-600">Team</Link>
         </nav>
 
         <div className="hidden md:flex items-center gap-5">
@@ -114,7 +114,7 @@ export default function Header() {
              <Link to="/about" className="w-full text-lg text-center hover:text-blue-600">About</Link>
              <Link to="/about" className="w-full text-lg text-center hover:text-blue-600">Blog</Link>
              <Link to="/contact" className="w-full text-lg text-center hover:text-blue-600">Contact</Link>
-             <Link to="/contact" className="w-full text-lg text-center hover:text-blue-600">Pages</Link>
+             <Link to="/contact" className="w-full text-lg text-center hover:text-blue-600">Team</Link>
 
              <div className="flex flex-col gap-4 mt-4 w-full items-center">
                <Link to="/login" className="flex items-center gap-2 text-blue-600 text-base">
